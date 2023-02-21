@@ -1,5 +1,5 @@
 # catoni-confseq
-Confidence sequences based on M-estimation for heavy-tailed, possibly contaminated data.
+Confidence sequences (CSs) based on M-estimation for heavy-tailed, possibly contaminated data.
 
 This repository serves as the code base for the following two papers, both authored by [Hongjian Wang](https://wanghongjian.wordpress.com/) and [Aaditya Ramdas](https://www.stat.cmu.edu/~aramdas/index.html):
 
@@ -13,3 +13,7 @@ The class `RCS_generator` in [`robustconfseq.py`](https://github.com/ShimonTroia
 In the process, one may query the e-value, p-value, and the confidence intervals *ad libitum*, without worries about the traditionally unsafe behavior of continuous monitoring.
 
 The confidence sequences are proven in both papers minimax optimal.
+
+Related repos:
+[confseq](https://github.com/gostevehoward/confseq): contains CSs for light-tailed data.
+[confseq_wor](https://github.com/WannabeSmith/confseq_wor) contains CSs for sampling without replacement.
