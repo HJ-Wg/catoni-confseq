@@ -10,7 +10,7 @@ This repository serves as the code base for the following two papers, both autho
 
 The class `RCS_generator` in [`robustconfseq.py`](https://github.com/ShimonTroiaeAbOrisWang/catoni-confseq/blob/main/robustconfseq.py) enables online, sequential, robust estimation (uncertainty quantification) and hypothesis testing of the population mean. One initializes the class by supplying the noise rate `eps` (can be 0), an upper bound on the variance `moment` (or any other $p$-central moment with $p>1$), and an optional `null` hypothesis. *Whenever* a new datapoint arrives, evoke `observe` to record it. 
 
-In the process, one may query the e-value, p-value, and the confidence intervals *ad libitum*, without worries about the traditionally unsafe behavior of continuous monitoring.
+In the meantime, one may query the e-value, p-value, and the confidence intervals *ad libitum*, without worries about the traditionally unsafe behavior of continuous monitoring.
 
 The confidence sequences are proven in both papers minimax optimal.
 
