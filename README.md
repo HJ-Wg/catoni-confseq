@@ -15,5 +15,5 @@ In the process, one may query the e-value, p-value, and the confidence intervals
 The confidence sequences are proven in both papers minimax optimal.
 
 Related repos:
--[confseq](https://github.com/gostevehoward/confseq): contains CSs for light-tailed data.
--[confseq_wor](https://github.com/WannabeSmith/confseq_wor) contains CSs for sampling without replacement.
+- [confseq](https://github.com/gostevehoward/confseq): contains CSs for light-tailed data.
+- [confseq_wor](https://github.com/WannabeSmith/confseq_wor): contains CSs for sampling without replacement.
