@@ -4,7 +4,7 @@ Confidence sequences (CSs) based on M-estimation for heavy-tailed, possibly cont
 This repository serves as the code base for the following two papers, both authored by [Hongjian Wang](https://wanghongjian.wordpress.com/) and [Aaditya Ramdas](https://www.stat.cmu.edu/~aramdas/index.html):
 
 
-- [Catoni-Style Confidence Sequences for Heavy-Tailed Mean Estimation](https://arxiv.org/abs/2202.01250) *Stochastic Processes and Their Applications (to appear)*
+- [Catoni-Style Confidence Sequences for Heavy-Tailed Mean Estimation](https://arxiv.org/abs/2202.01250) *Stochastic Processes and Their Applications*
 - [Huber-robust Confidence Sequences](https://arxiv.org/abs/2301.09573)  *AISTATS 2023 (oral)*
 
 
