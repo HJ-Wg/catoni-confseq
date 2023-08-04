@@ -40,14 +40,29 @@ def find_zero_decreasing(f, guess, radius=1, x_tolerance=None, y_tolerance=0.000
     
     upper = guess + radius
     lower = guess - radius
+
+    # adjust to f(lower) > 0 > f(upper)
+    while(f(upper) > 0):
+        upper = guess + 5*radius
+        lower = guess + radius
+        guess = guess + 3*radius
+        radius = 2*radius
+
+    while(f(lower) < 0):
+        upper = guess - radius
+        lower = guess - 5*radius
+        guess = guess - 3*radius
+        radius = 2*radius
+    
     f_upper = f(upper)
     f_lower = f(lower)
-      
+
+    '''
     if f_upper > 0:
         return find_zero_decreasing(f, guess + 3*radius, 2*radius)
     if f_lower < 0:
         return find_zero_decreasing(f, guess - 3*radius, 2*radius)
-      
+    '''
       
     if abs(f_upper + f_lower) < y_tolerance:
         return guess
