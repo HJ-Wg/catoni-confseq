@@ -30,13 +30,14 @@ def find_zero_decreasing(f, guess, radius=1, x_tolerance=None, y_tolerance=0.000
     float
         The zero of f found by the algorithm. If f is positive within |x| < bound, return inf; negative, -inf.
     '''
-    if x_tolerance is None:
-        x_tolerance = radius * 0.00001
     
     if guess > bound:
         return float("inf")
     if guess < -bound:
         return float("-inf")
+        
+    if x_tolerance is None:
+        x_tolerance = radius * 0.00001
     
     upper = guess + radius
     lower = guess - radius
@@ -47,12 +48,17 @@ def find_zero_decreasing(f, guess, radius=1, x_tolerance=None, y_tolerance=0.000
         lower = guess + radius
         guess = guess + 3*radius
         radius = 2*radius
+        if guess > bound:
+            return float("inf")
 
     while(f(lower) < 0):
         upper = guess - radius
         lower = guess - 5*radius
         guess = guess - 3*radius
         radius = 2*radius
+        if guess < -bound:
+            return float("-inf")
+
     
     f_upper = f(upper)
     f_lower = f(lower)
